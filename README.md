@@ -126,8 +126,10 @@ if \_\_name\_\_ == "\_\_main\_\_":
 
 **Output:**
 
+![Image](https://github.com/user-attachments/assets/78d28229-0a5f-4c81-9b6d-bc29cfe52049)
+
+
 ![image](https://github.com/user-attachments/assets/0e72d6cf-0b0f-42d4-abf5-f7065c2e56e2)
-![Image](https://github.com/user-attachments/assets/7a5c50cd-0dd7-4cd0-93a9-7320daf2a6b3)
 
 
 **Conclusion:**
