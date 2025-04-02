@@ -14,12 +14,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # Ensures repository files are available
+        uses: actions/checkout@v2  # Fetches your repository's code
 
       - name: Verify requirements file exists
-        run: ls -l web-socket  # Debug: List files in 'web-socket' directory
+        run: ls -l  # Lists files in the root directory to confirm presence of requirements.txt
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r web-socket/requirements.txt  # Use correct path
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "requirements.txt not found"
+            exit 1
+          fi
