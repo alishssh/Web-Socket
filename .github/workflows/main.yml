@@ -22,9 +22,10 @@ jobs:
           python-version: '3.9'  # Set up the Python version you want to use
 
       - name: Install dependencies
-env: |
+  runs-on: |
     python -m pip install --upgrade pip
-    if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    if [ -f requirements.txt ]; then pip install -r requirements.txt; else echo "requirements.txt not found"; fi
+
 
       - name: Run tests
         run: |
